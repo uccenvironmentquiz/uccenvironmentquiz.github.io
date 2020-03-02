@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title> The Quiz </title>
+</head>
+<body style = "background-color:powderblue;">
+
+<div class="topnav">
+  <a href="index.html">About Our Cause</a>
+  <a href="thequiz.html">The Quiz</a>
+  <a href="bib.html">Bibliography</a>
+</div>
+
+<h1> The Quiz </h1>
+<hr> 
+
+<form>
+  During the school day, where do you usually get your lunch?<br>
+  <input type="radio" name="lunch" id="ud1">Upper Dining Hall (UDH)<br>
+  <input type="radio" name="lunch" id="ld1">Lower Dining Hall (LDH)<br>
+  <input type="radio" name="lunch" id="home1">Bring one from home<br>
+  <input type="radio" name="lunch" id="ofc1">Eat lunch off campus at a fast food restaurant<br>
+</form>
+
+<p> <button class = "button" onclick="checka1()">Submit</button> </p>
+<!--<button onclick="uncheck()">Uncheck "Red"</button>-->
+<p id="a1"></p>
+
+<form>
+  On a typical day, how do you commute to school?<br>
+  <input type="radio" name="transit" id="walk1">Walking<br>
+  <input type="radio" name="transit" id="bike1">Biking/Skateboarding/Scootering<br>
+  <input type="radio" name="transit" id="ttc1">Taking public transport<br>
+  <input type="radio" name="transit" id="car1">Driving<br>
+</form>
+
+<p> <button class = "button" onclick="checka2()">Submit</button> </p>
+
+<p id="a2"></p>
+
+<form>
+  What percentage of your diet consists of red meat?<br>
+  <input type="radio" name="diet" id="fmeat">100 - 75%<br>
+  <input type="radio" name="diet" id="hmeat">75 - 50%<br>
+  <input type="radio" name="diet" id="lmeat">50 - 25%<br>
+  <input type="radio" name="diet" id="lnmeat">25 - 10%<br>
+  <input type="radio" name="diet" id="nmeat">10 - 0%<br>
+</form>
+
+<p> <button class = "button" onclick="checka3()">Submit</button> </p>
+
+<p id="a3"></p>
+
+<form>
+  How do you obtain your textbooks?<br>
+  <input type="radio" name="tbook" id="new1">Purchase them brand new<br>
+  <input type="radio" name="tbook" id="used1">Purchase them used<br>
+  <input type="radio" name="tbook" id="ov1">Purchase online versions<br>
+  <input type="radio" name="tbook" id="lib1">lend them from a library<br>
+</form>
+
+<p> <button class = "button" onclick="checka4()">Submit</button> </p>
+
+<p id="a4"></p>
+
+<form>
+  If given the choice, how would you take notes?<br>
+  <input type="radio" name="notes" id="ltop1">On a laptop (or other digital device)<br>
+  <input type="radio" name="notes" id="pp1"> Pencil and paper<br>
+</form>
+
+<p> <button class = "button" onclick="checka5()">Submit</button> </p>
+
+<p id="a5"></p>
+
+<form>
+  Let’s say you are at the college and are craving a beverage to quench your thirst, what do you do?<br>
+  <input type="radio" name="thirst" id="ldd1">Go to the LDH and purchase a drink<br>
+  <input type="radio" name="thirst" id="wf1">Go the water fountain <br>
+  <input type="radio" name="thirst" id="rwb1">Fill up your reusable water bottle with water from a filling station<br>
+</form>
+
+<p> <button class = "button" onclick="checka6()">Submit</button> </p>
+
+<p id="a6"></p>
+
+<form>
+  How long do you shower for and what is the temperature of the water?<br>
+  <input type="radio" name="shower" id="10hot">More than five minutes and hot water<br>
+  <input type="radio" name="shower" id="5hot">Less than five minutes and hot water<br>
+  <input type="radio" name="shower" id="10cold">More than five minutes and cold water<br>
+  <input type="radio" name="shower" id="5cold">Less than five minutes and cold water<br>
+</form>
+
+<p> <button class = "button" onclick="checka7()">Submit</button> </p>
+
+<p id="a7"></p>
+
+<form>
+  Where do you purchase your uniform?<br>
+  <input type="radio" name="uni" id="tubs">TUBS<br>
+  <input type="radio" name="uni" id="blues">Brand new from the Blues Store<br>
+  <input type="radio" name="uni" id="useduni1">At the used uniform sale before the beginning of the school year<br>
+  <input type="radio" name="uni" id="alum1">From a UCC alumni<br>
+</form>
+
+<p> <button class = "button" onclick="checka8()">Submit</button> </p>
+
+<p id="a8"></p>
+
+<form>
+  How do you usually shave?<br>
+  <input type="radio" name="shave" id="elec1">Using an Electric razor<br>
+  <input type="radio" name="shave" id="disp1">Using Disposable razors<br>
+</form>
+
+<p> <button class = "button" onclick="checka9()">Submit</button> </p>
+
+<p id="a9"></p>
+
+<script>
+function checka1() {
+  	document.getElementById("a1").innerHTML = "Assuming the meal that you eat is the same no matter the place, The Upper Dining Hall is the best place to eat because all dishes and utensils are reused, as opposed to being disposed of. According to the Clean Air Council, enough plastic utensils are thrown away by North Americans to circle the equator 300 times. That being said, if you eat the lunch that you brought from your home using reusable containers and eating utensils, it would be the equivalent of eating at the UDH and is thus, tied for being the most eco-friendly option. Eating lunch at the LDH requires most food items to be packaged with single-use packaging which creates waste in the environment. Eating lunch off-campus at a fast-food restaurant is not the most eco-friendly either as once again, food items are packaged with single-use packaging which creates waste in the environment.";
+  }
+
+
+
+function checka2() {
+  	document.getElementById("a2").innerHTML = "Either walking, biking/skateboarding/scootering, or taking public transport are all environmentally friendly to the environment as they leave a relatively small carbon footprint. Driving is the most negative for the environment as out of the other three options, it leaves the largest carbon footprint. According to the EPA, a typical passenger vehicle emits about 4.6 tonnes of carbon dioxide into our atmosphere every year. Tip: If it is imperative that you drive in a car to school, try carpooling with other students as it will reduce your carbon footprint."
+}
+
+function checka3() {
+  	document.getElementById("a3").innerHTML = "From an environmental perspective, it is the most optimal to eat the smallest amount of red meat as possible due to the fact that cattle, the animal behind red meat, emit large quantities of CO2 when excreting. A 2013 study by the U.N. Food and Agriculture Organization estimated that beef production was responsible for 5.9% of all human greenhouse gas emissions. Therefore, the consumption of red meat and even dairy products are a large contributor to climate change."
+}
+
+
+
+function checka4() {
+  	document.getElementById("a4").innerHTML = "Either obtaining a used textbook, borrowing one from the library, or getting an online version, all have relatively small ecological footprints as no existing trees are being torn down to provide you with a physical textbook. Purchasing a brand new textbook is the worst for the environment out of these options as trees are required to be cut down to create the brand new book. According to the non-profit organization, OneTreePlanted, 3.5/10 trees get cut down to be processed into pulp to produce paper-related products. However, even after purchasing a new textbook, you can still help the environment! After you finish using the textbook, if you sell or donate it to someone else who needs it you are stopping the production of a brand new textbook thus, saving trees!"
+}
+
+
+
+
+function checka5() {
+  	document.getElementById("a5").innerHTML = "In this case, the most eco-friendly option is to take notes on a laptop or other digital device as using paper requires the removal of trees, thus making your carbon footprint larger."
+}
+
+function checka6() {
+  	document.getElementById("a6").innerHTML = "Now some of the drinks at the LDH may be more delicious than plain old water, but most are encompassed in single use packaging which leaves a larger carbon footprint than using a reusable water bottle or taking a drink from the water fountain. According to the EPA, over 10 million tonnes of plastic packaging was landfilled by Americans in 2017."
+}
+
+
+function checka7() {
+  	document.getElementById("a7").innerHTML = "In order to have the smallest environmental impact, it is imperative to keep showers both short and use cold water as this reduces the amount of water and energy used in a shower. Did you know that an 8 minute shower uses 76 litres of water?."
+}
+
+function checka8() {
+  	document.getElementById("a8").innerHTML = "Purchasing a brand new uniform from the Blues Store has the largest environmental impact as many resources are required to create brand new clothing. Purchasing a used uniform from either TUBS, the used uniform sale or a UCC alumni is the best for the environment as clothes that have already been made are being recycled. Did you know that the textile industry was the second largest polluter in the world, just after the oil industry?"
+}
+
+
+function checka9() {
+  	document.getElementById("a9").innerHTML = "Electric razors are the best choice in terms of reducing one’s environmental impact because they last years without needing to be disposed of and some brands do not require the use of shaving gel (Tip: Always clean electric razors when reusing). Disposable razors have the biggest environmental impact because they are disposed of frequently. The EPA once estimated that around 2 billion individual razors get thrown away in the USA every year."
+}
+
+
+
+
+</script>
+
+<!--<script src="script.js"></script> -->
+
+
+
+</body>
+</html>
